@@ -14,7 +14,7 @@ body {
 .sidebar_navigation {
     background-color: #121212;
     border-radius: 8px;
-    padding: 16px 0 0 16px;
+    padding: 10px 0 0 px;
 }
 
 .sidebar_navigation .logo{
@@ -30,7 +30,7 @@ body {
 
 .sidebar nav ul {
     margin-top: 20px;
-    padding: 0 20px 10px 20px;
+    padding: 0 20px 10px 10px;
 }
 
 .sidebar nav ul li {
@@ -44,4 +44,9 @@ body {
     color: #b3b3b3;
     text-decoration: none;
     font-family: "DM Sans", sans-serif;
+}
+
+.sidebar nav ul li a span:nth-child(1){
+    margin-right: 10px;
+    font-size: 22.5px;
 }
