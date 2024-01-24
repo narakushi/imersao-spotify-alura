@@ -81,7 +81,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .library .box-library {
@@ -92,7 +91,7 @@ body {
     font-weight: bold;
     padding: 20px 10px 20px 10px;
     font-weight: 600;
-
+    cursor: pointer;
 }
 
 .box-library .fa-book{
@@ -139,6 +138,7 @@ body {
     border: none;
     font-weight: bold;
     color: #000;
+    cursor: pointer;
 }
 
 .content-library .cookies{
@@ -161,6 +161,7 @@ body {
     font-size: 14px;
     width: 170px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
