@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: var(--black);
     font-family: var(--font-dm-sans);
 }
 
@@ -13,14 +13,14 @@ body {
 }
 
 .sidebar_navigation {
-    background-color: #121212;
+    background-color: var(--light-black);
     border-radius: 8px;
     padding: 10px 0 0 0px;
     width: 300px;
 }
 
 .sidebar_navigation .logo {
-    background: #121212;
+    background: var(--light-black);
     display: flex;
     border-radius: 8px;
     padding: 16px 0 0 16px;
@@ -52,7 +52,7 @@ body {
 }
 
 .library {
-    background-color: #121212;
+    background-color: var(--light-black);
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
@@ -131,7 +131,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #fff;
-    color: #000;
+    color: var(--black);
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
@@ -194,7 +194,7 @@ body {
 .footer__button{
     background-color: #fff;
     font-weight: bold;
-    color: #000;
+    color: var(--black);
     font-size: 16px;
     border: none;
     border-radius: 40px;
