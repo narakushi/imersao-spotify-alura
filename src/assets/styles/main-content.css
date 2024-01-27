@@ -110,7 +110,7 @@
     color: var(--white);
 }
 
-.card-container-content__text h2 {
+.card-container-content__text h1 {
     margin-bottom: 48px;
     font-size: 32px;
 }
