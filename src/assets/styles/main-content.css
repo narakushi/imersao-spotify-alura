@@ -1,7 +1,7 @@
 /* HEADER */
 
 .main-container {
-    max-width: 80vw;
+    max-width: 98vw;
     height: 100vh;
     margin-left: 320px;
     margin-right: 56px;
@@ -156,8 +156,8 @@
 
 .offer__list-item { /*configura como os card vão ficar dispostos*/
     display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   /* justify-items: center;*/
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;*/
     gap: 16px;
     margin: 0 auto;
 }
