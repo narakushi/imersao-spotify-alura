@@ -16,7 +16,7 @@ else {
 
 //GRID INTELIGENTE
 
-const container = document.querySelector(".offer__list-item");
+/*const container = document.querySelector(".offer__list-item");
 
 const observer = new ResizeObserver(( () => {
 
@@ -29,7 +29,7 @@ const observer = new ResizeObserver(( () => {
     const cards = document.querySelector('.cards');
     heightCards = window.getComputedStyle(cards).height; //pegando a altura do card
 
-    /**convertendo a altura para tipo numerico */
+    /**convertendo a altura para tipo numerico 
 
     heightCards = parseInt(heightCards)
 
@@ -38,5 +38,5 @@ const observer = new ResizeObserver(( () => {
     container.style.gridTemplateColumns = `repeat(${numColumns}, minmax(220px, 1fr))`;
 }))
 
-observer.observe(container);
+observer.observe(container);*/
 
