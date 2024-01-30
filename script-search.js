@@ -22,7 +22,7 @@ function displayResults(data){
     resultPlaylist.classList.add('hidden');
     resultArtists.classList.remove('hidden');
 
-    let artistCard = ` 
+let artistCard = ` 
     <div class="artist-card">
         <div class="card-img">
             <img id="artist-img" class="artist-img" href="${data.urlImg}">
