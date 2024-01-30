@@ -249,3 +249,13 @@
     transform: rotate(25deg) translate(18%, -2%);
 }
 
+/* CARD ARTISTA */
+
+.hidden {
+    display: none;
+}
+
+.grid-container {
+    grid-gap: var(--grid-gap);
+}
+

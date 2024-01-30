@@ -9,4 +9,8 @@
     --light-black: #121212;
     --black: #000;
     --white: #fff;
+
+    /* GAP */
+
+    --grid-gap: 24px;
 }
