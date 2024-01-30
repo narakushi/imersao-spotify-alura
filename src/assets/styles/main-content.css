@@ -1,7 +1,7 @@
 /* HEADER */
 
 .main-container {
-    max-width: 100vw;
+    max-width: 98vw;
     height: 100vh;
     margin-left: 320px;
     margin-right: 56px;
@@ -157,8 +157,9 @@
 .offer__list-item { /*configura como os card vão ficar dispostos*/
     display: grid;
    /* justify-items: center;*/
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 0 auto;
 }
 
 .cards {
@@ -167,7 +168,6 @@
     height: 200px;
     overflow: hidden;
     border-radius: 8px;
-    margin: 0 auto;
 }
 
 .cards span {
