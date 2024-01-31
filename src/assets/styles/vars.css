@@ -9,8 +9,12 @@
     --light-black: #121212;
     --black: #000;
     --white: #fff;
+    --light-black-2: #181818;
+    --light-black-3: #252525;
 
-    /* GAP */
+    /* UNITS */
 
     --grid-gap: 24px;
+    --column-count: 5;
+    --min-container-width: 372px;
 }

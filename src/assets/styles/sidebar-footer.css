@@ -16,7 +16,6 @@ body {
     background-color: var(--light-black);
     border-radius: 8px;
     padding: 10px 0 0 0px;
-    width: 300px;
 }
 
 .sidebar_navigation .logo {
@@ -62,6 +61,7 @@ body {
     font: 600;
     font-size: 14px;
     margin-top: 10px;
+    min-width: 250px;
 }
 
 .library .library__content {

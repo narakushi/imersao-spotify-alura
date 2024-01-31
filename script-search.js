@@ -5,55 +5,39 @@ const resultPlaylist = document.getElementById('result-playlists');
 /**consumindo api */
 
 function requestApi(searchTerm) {
-    const url = `http://localhost:3000/artists` /** para que na hora da busca, não sejam carregados todos os arquivos que iniciem com determinado termo que o usuário digitou e sim só os que se parecerem com o que ele busca */
+    const url = `http://localhost:3000/artists` /* a requisição irá me retornar todos os artistas */
     
     fetch(url)
     .then((response) => {
          return response.json()
-        })  /*fica escutando para devolver e resolver a promisse */
-    .then((data) => search(data, searchTerm))
+        })  /*fica escutando para devolver e resolver a promisse, quando resolvida, devolve o array de artistas */
+    .then((data) => search(data, searchTerm)) //o termo a ser pesquisado é passado para uma função de busca
     
 }
 
 function displayResults(data){
-
-
-    let gridContainer = document.querySelector('.grid-container');
     resultPlaylist.classList.add('hidden');
+    
+
+    const artistName = document.getElementById('artist-name');
+    const artistImg = document.getElementById('artist-img');
+
+    artistName.innerText = data.name; /**passo o nome do artista para ser exibido na tela */
+    artistImg.src = data.urlImg; /**passo a imagem do artista para também ser exibida */
+
+
     resultArtists.classList.remove('hidden');
-
-let artistCard = ` 
-    <div class="artist-card">
-        <div class="card-img">
-            <img id="artist-img" class="artist-img" href="${data.urlImg}">
-            <div class="play">
-                <span class="fa fa-solid fa-play"></span>
-            </div>
-        </div>
-        <div class="card-text">
-            <a title="Foo Fighters" class="vst" href="">
-                <span class="artist-name" id="artist-name">${data.name}</span>
-                <span class="artist-categorie">Artista</span>
-            </a> 
-        </div>
-    </div>`;
-
-
-
-    gridContainer.innerHTML = artistCard;
 
 }
 
-function search(data, searchTerm){
+function search(data, searchTerm){ /**busca é realizada por meio do for in que pega o indice de cada elemento do array de artistas*/
     for (let i in data){
         let name = data[i].name.toLowerCase();
-        let genre = data[i].genre.toLowerCase();
 
-       if(name.includes(searchTerm) || genre.includes(searchTerm)){
-        displayResults(data[i], searchTerm)
+       if(name.includes(searchTerm)){ //se o termo a a ser buscado for parecido com o nome de dentro do array de artistas, chamamos a função displayResults para exibir na tela o artista mandando os dados daquele artista p função 
+        displayResults(data[i])
        }
     }
-    
 }
 
 
