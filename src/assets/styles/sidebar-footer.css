@@ -1,6 +1,20 @@
+*{
+    box-sizing: border-box;
+
+}
+
 body {
     background-color: var(--black);
     font-family: var(--font-dm-sans);
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #242424;
+   
 }
 
 .sidebar {
@@ -9,7 +23,7 @@ body {
     left: 0;
     bottom: 0;
     padding: 12px;
-    max-width: 300px;
+    min-width: 290px;
 }
 
 .sidebar_navigation {

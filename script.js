@@ -35,7 +35,7 @@ const observer = new ResizeObserver(( () => {
 
     const numColumns = Math.floor(containerWidth / heightCards); // pegando a quantidade de colunas dentro do container
 
-    container.style.gridTemplateColumns = `repeat(${numColumns}, minmax(180px, 200px))`;
+    container.style.gridTemplateColumns = `repeat(${numColumns}, minmax(180px, 1fr))`;
 }))
 
 observer.observe(container);
