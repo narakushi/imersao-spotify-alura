@@ -1,7 +1,7 @@
 /* HEADER */
 
 .main-container {
-    max-width: 100vw;
+    max-width: 100%;
     min-height: 100vh;
     margin-left: 280px;
     margin-right: 5px;
@@ -16,6 +16,7 @@
     margin-right: 0;
     border-radius: 8px;
     background-color: var(--light-black);
+    max-width: 100%; 
 }
 
 .header__navigation .navigation {
@@ -100,6 +101,7 @@
     border-radius: 8px;
     padding-top: 16px;
     margin: 10px;
+    max-width: 100%;
 }
 
 .card-container .card-container__content {
@@ -146,7 +148,7 @@
 
 .offer__scroll-container { /*configura o scroll*/
     max-height: 100%;
-    margin: 24px;
+    margin: 15px;
 }
 
 .offer__scroll-container::-webkit-scrollbar {
@@ -160,6 +162,7 @@
 .offer__list-item { /*configura como os card vão ficar dispostos*/
     display: grid;
    /* justify-items: center;*/
+  
     gap: 12px;
     margin: 0 auto;
     max-width: 100%;
@@ -168,7 +171,7 @@
 
 .cards {
     position: relative;
-    max-width: 180px;
+    max-width: 200px;
     height: 180px;
     overflow: hidden;
     border-radius: 8px;
