@@ -50,11 +50,6 @@
     cursor: pointer;
 }
 
-.header__login {
-    display: flex;
-    align-items: center;
-}
-
 .header__search {
     display: flex;
     align-items: center;
@@ -64,6 +59,7 @@
     background-color: #242424;
     border-radius: 500px;
     border: 1px solid transparent;
+
 }
 
 .header__search img {
@@ -86,18 +82,29 @@
 
 /* HOVER INPUT */
 
-.header__search:focus {
-    outline: var(--white)
-    ;
+.header__search:focus-within {
+    box-shadow: 0 0 1px 2px var(--white);
+}
+
+.header__login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__login .subscribe, 
+.header__login .login{
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 500ms ease-in-out;
 }
 
 .header__login .subscribe {
     color: #a7a7a7;
     font-size: 16px;
-    font-weight: 700;
     background-color: transparent;
     margin-right: 32px;
-    border: none;
+    white-space: nowrap;
 }
 
 .header__login .login {
@@ -105,9 +112,17 @@
     height: 48px;
     color: #000;
     font-size: 14px;
-    font-weight: 700;
     border-radius: 40px;
-    border: none;
+}
+
+.header__login .subscribe:hover {
+    color: var(--white);
+    transform: scale(1.05);
+
+}
+
+.header__login .login:hover {
+    transform: scale(1.08);
 }
 
 /*PLAYLIST*/
@@ -167,16 +182,19 @@
     /*configura como os card vão ficar dispostos*/
     display: grid;
     gap: 14px;
+    justify-content: center;
+    margin-top: 3px;
 }
 
 .cards {
     position: relative;
     width: 100%;
     height: 190px;
-    max-width: 100%;
+    width: 100%;
     max-height: 200px;
     overflow: hidden;
     border-radius: 8px;
+    transition: 500ms ease-in-out;
 }
 
 .cards span {
@@ -185,6 +203,11 @@
     color: var(--white);
     font-size: 24px;
     font-weight: 700;
+}
+
+.cards:hover {
+    scale: 1.02;
+    rotate: 1.2deg;
 }
 
 /*COLOR CARDS*/

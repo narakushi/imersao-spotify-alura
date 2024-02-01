@@ -67,7 +67,7 @@ body::-webkit-scrollbar{
     flex-direction: column;
     padding: 4px 8px;
     color: #b3b3b3;
-    font: 600;
+    font-weight: 600;
     font-size: 14px;
     margin-top: 10px;
     min-width: 250px;
@@ -102,6 +102,10 @@ body::-webkit-scrollbar{
 
 .library .library__content .fa-plus {
     margin: 24px 10px;
+}
+
+.library .library__content span:hover {
+    cursor: pointer;
 }
 
 .section-playlist {
@@ -150,6 +154,12 @@ body::-webkit-scrollbar{
     margin-top: 12px;
     border: 0;
     width: 113px;
+    transition: 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.section-playlist__button:hover {
+    scale: 1.08;
 }
 
 .sidebar .cookies {
@@ -210,4 +220,10 @@ body::-webkit-scrollbar{
     border-radius: 40px;
     padding: 14px 30px;
     box-sizing: border-box;
+    transition: 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.footer__button:hover{
+    scale: 1.08;
 }
