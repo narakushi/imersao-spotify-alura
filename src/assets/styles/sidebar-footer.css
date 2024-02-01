@@ -6,6 +6,8 @@
 body {
     background-color: var(--black);
     font-family: var(--font-dm-sans);
+    min-width: 600px;
+    min-height: 800px;
 }
 
 body::-webkit-scrollbar{
@@ -18,13 +20,14 @@ body::-webkit-scrollbar{
     left: 0;
     bottom: 0;
     padding: 8px;
-    min-width: 290px;
+    min-width: 280px;
 }
 
 .sidebar_navigation {
     background-color: var(--light-black);
     border-radius: 8px;
     padding: 10px 0 0 0px;
+    width: 100%;
 }
 
 .sidebar_navigation .logo {
@@ -70,7 +73,7 @@ body::-webkit-scrollbar{
     font-weight: 600;
     font-size: 14px;
     margin-top: 10px;
-    min-width: 250px;
+    width: 100%;
 }
 
 .library .library__content {

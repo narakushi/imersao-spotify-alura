@@ -3,11 +3,6 @@
 }
 
 @media all and (max-width: 768px) {
-    .sidebar{
-        max-width: 120px;
-    }
-
-
     .header__login{
         display: flex;
         flex-direction: column;
