@@ -272,6 +272,46 @@
     background: rgb(60, 30, 80);
 }
 
+.card16{
+    background: rgb(241, 94, 108);
+}
+
+.card17{
+    background-color: rgb(61, 42, 155);
+}
+
+.card18{
+    background: rgb(185, 29, 29); 
+}
+
+.card19{
+    background: rgb(3, 55, 21); 
+}
+
+.card20{
+    background: rgb(149, 11, 105); 
+}
+
+.card21{
+    background: rgb(8, 228, 195); 
+}
+
+.card22{
+    background: rgb(237, 3, 229); 
+}
+
+.card23{
+    background: rgb(10, 11, 75); 
+}
+
+.card24{
+    background: rgb(238, 254, 9); 
+}
+
+.card25{
+    background: rgb(163, 237, 4); 
+}
+
 .offer__list-item img {
     position: absolute;
     right: 0;
