@@ -118,7 +118,6 @@
 .header__login .subscribe:hover {
     color: var(--white);
     transform: scale(1.05);
-
 }
 
 .header__login .login:hover {
@@ -161,7 +160,7 @@
 
 .offer__scroll-container{
     max-width: 100%;
-    max-height: 75vh;
+    max-height: 70vh;
     overflow-y: auto;
 }
 
