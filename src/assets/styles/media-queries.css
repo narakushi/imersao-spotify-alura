@@ -3,6 +3,39 @@
 }
 
 @media all and (max-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar{
+        position: static;
+        width: 100%;
+        margin: 0;
+        margin-top: 70px;
+    }
+
+    .header__navigation{
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        top: 0;
+        box-shadow: 0 0 1px 3px var(--black);
+        padding: 5px;
+        border-radius: 0;
+    }
+
+    .header__navigation .header_search {
+        width: 200px;
+    }
+
+
+    .main-container{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 50%;
+    }
+
     .header__login{
         display: flex;
         flex-direction: column;
@@ -29,13 +62,17 @@
     .menu-icon::after{
         content: '☰';
         color: var(--white);
-        font-size: 24px;
+        font-size: 20px;
         width: 20px;
         height: 20px;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .menu-check:checked~.header__login{
         display: flex;
+    }
+
+    .footer{
+        border: none;
     }
 }

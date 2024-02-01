@@ -6,7 +6,7 @@
 body {
     background-color: var(--black);
     font-family: var(--font-dm-sans);
-    min-width: 600px;
+    min-width: 300px;
     min-height: 800px;
 }
 
